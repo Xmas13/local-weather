@@ -1,0 +1,27 @@
+{
+  "name": "local-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xmas13/local-weather.git"
+  },
+  "author": "Noel Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xmas13/local-weather/issues"
+  },
+  "homepage": "https://github.com/Xmas13/local-weather#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-rate-limit": "^2.6.0",
+    "request": "^2.81.0"
+  }
+}

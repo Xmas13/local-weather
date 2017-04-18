@@ -1,0 +1,20 @@
+{
+  "name": "local-weather",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Xmas13/local-weather",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "p5.js": "p5js#^0.5.8"
+  }
+}
