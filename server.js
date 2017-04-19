@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api', (req, res) => {
-  const lat = "lat=" + req.body.lat;
-  const lon = "lon=" + req.body.lon;
+  const lat = "lat=" + req.body.latitude;
+  const lon = "lon=" + req.body.longitude;
   const appid = "appid=" + appID;
   const url = "http://api.openweathermap.org/data/2.5/weather?" + lat + "&" + lon + "&" + appid;
   request.get(url, (err, response, body) => {
-    if(err) throw err;
+    if(err) res.send(err);
     res.send(body);
   })
 })
