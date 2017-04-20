@@ -31,7 +31,7 @@ export class WeatherService {
   const headers = new Headers();
   headers.append('Content-Type', 'application/json');
   return this.http
-    .post('https://localhost:8080/api', JSON.stringify(position),{headers: headers})
+    .post('http://localhost:8080/api', JSON.stringify(position),{headers: headers})
     .map(res => res.json());
 }
 
