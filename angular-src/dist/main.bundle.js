@@ -102,7 +102,7 @@ var WeatherService = (function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         return this.http
-            .post('http://localhost:8080/api', JSON.stringify(position), { headers: headers })
+            .post('/api', JSON.stringify(position), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     return WeatherService;
