@@ -1,14 +1,14 @@
 <div class="vertical-center">
 <div class="jumbotron">
-<h1>{{weather.city}}</h1>
-<h2>{{weather.description}}</h2>
-<h2>{{weather.temp}}</h2>
-<h3>High: {{weather.temp_max}} Low: {{weather.temp_min}}</h3>
-<h3>Wind Speed: {{weather.wind}}</h3>
-<h3>Sunrise: {{weather.sunrise}} Sunset: {{weather.sunset}}</h3>
+<h1>{{this.weather.city}}</h1>
+<h2>{{this.weather.description}}</h2>
+<h3>Current: {{this.display.temp}}</h3>
+<h3>High: {{this.display.temp_max}} | Low: {{this.display.temp_min}}</h3>
+<h3>Wind Speed: {{this.display.wind}}</h3>
+<h3>Sunrise: {{this.weather.sunrise}} Sunset: {{this.weather.sunset}}</h3>
 <hr />
-<a class="btn btn-primary btn-lg" role="button">American</a>
-<a class="btn btn-primary btn-lg" role="button">European</a>
-<a class="btn btn-primary btn-lg" role="button">Scientist</a>
+<a (click)="setAmerican()" class="btn btn-primary btn-lg" role="button">American</a>
+<a (click)="setEuropean()" class="btn btn-primary btn-lg" role="button">European</a>
+<a (click)="setScientist()" class="btn btn-primary btn-lg" role="button">Scientist</a>
 </div>
 </div>
